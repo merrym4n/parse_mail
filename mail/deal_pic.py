@@ -3,6 +3,7 @@ import re
 import unicodedata
 import urllib
 
+# Idnetify a meaningful URL from an arbitrary URL.
 def CheckUrl(url):
 	try:
 		while(True):
