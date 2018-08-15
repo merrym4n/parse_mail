@@ -1,0 +1,27 @@
+﻿About_Mail.txt
+uid		: 메일 전체에서 메일 인덱스
+mailbox		: ?
+gmail		: ?
+
+message		: 좀더 자세한 메일 본문에 관한 html
+headers		: 메일 헤더
+
+subject		: 메일 제목
+body		: 메일 본문
+html		: 본문에 관한 html
+
+to		: 수신자
+fr		: 송시자
+cc		: 참조자
+delevered_to	: ?
+
+sent_at		: 메일 수신 일자 및 시간
+
+flags		: 플래그들
+labels		: 라벨들
+
+thread_id	: ?
+thread		: ?
+message_id	: ?
+
+attachments	: 첨부파일

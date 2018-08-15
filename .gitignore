@@ -1,0 +1,8 @@
+# Temp Files
+*.pyc
+*test*
+
+# Personal Information
+secret_login.py
+Downloads/
+build/

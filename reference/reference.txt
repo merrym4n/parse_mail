@@ -1,0 +1,67 @@
+﻿# Environment Settings
+http://shinrip.tistory.com/3
+
+# Gmail login
+https://cpuu.postype.com/post/23066
+https://github.com/charlierguo/gmail
+
+# Encoding
+http://amornatura.tistory.com/104
+https://allieus.wordpress.com/2015/03/23/파이썬에서-한글을-처리하실-때-필히-유니코드를-쓰/
+http://blog.naver.com/PostView.nhn?blogId=lingua&logNo=220490711285
+
+# Folder import
+http://oniondev.egloos.com/9753808
+
+# regular expresion
+http://minsone.github.io/regex/regexp-using-regexp
+https://wikidocs.net/4308
+https://blog.outsider.ne.kr/360
+
+# Directory Manage
+https://hashcode.co.kr/questions/273/디렉토리가-있는지-없는지-확인하는-방법
+http://tip.daum.net/question/58936024
+https://stackoverflow.com/questions/273192/how-can-i-safely-create-a-nested-directory-in-python
+
+# requests
+http://docs.python-requests.org/en/master/
+http://dgkim5360.tistory.com/entry/python-requests
+
+# Handling Strings
+https://justdoding.blogspot.com/2017/07/python-27-find-substring-refinditer.html
+http://simplesolace.tistory.com/entry/파이썬-python-문자열
+
+# Exception
+https://wayhome25.github.io/python/2017/02/26/py-12-exception/
+https://python.bakyeono.net/chapter-9-4.html
+
+# URL Decoding
+https://code.i-harness.com/ko/q/fcc735
+http://doriri.tistory.com/32
+https://stackoverflow.com/questions/16566069/url-decode-utf-8-in-python
+
+# Python script to exe
+https://stackoverflow.com/questions/12071295/how-do-i-make-a-windows-exe-from-a-python-2-7-3-script
+http://pyinstaller.readthedocs.io/en/stable/installation.html
+https://winterj.me/pyinstaller/
+https://github.com/requests/requests/issues/4021
+https://github.com/maphew/apt/issues/45
+https://bluebead38.blogspot.com/2017/06/python-exe-openpyxl-requests.html
+
+# File download
+https://stackoverflow.com/questions/39029356/how-can-i-use-urllib-request-urlretrieve-with-python-2-7
+
+# Scheduler
+https://www.tabmode.com/goods/windows10/win10-shutdown-timer.html
+
+# csv
+http://pythonstudy.xyz/python/article/207-CSV-%ED%8C%8C%EC%9D%BC-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0
+
+# gps
+https://cpuu.postype.com/post/23100/
+
+# hash
+https://stackoverflow.com/questions/3431825/generating-an-md5-checksum-of-a-file
+
+# pyinstaller module problem
+https://pythonhosted.org/PyInstaller/hooks.html
