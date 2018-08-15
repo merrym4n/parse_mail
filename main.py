@@ -3,6 +3,7 @@ import os
 import sys
 import gmail
 import csv
+import folium
 
 sys.path.insert(0, "./mail")
 import secret_login
@@ -17,6 +18,7 @@ try:
 		unread = g.inbox().mail(unread=True, sender='fl0ckfl0ck@hotmail.com')
 		i = 0
 		number = 0
+		gps_all = folium.Map(location=[22.9602, 119.2102], zoom_start=5)
 		for new in unread:
 			# If not fetch, can not read email
 			new.fetch()
@@ -30,10 +32,11 @@ try:
 					wr.writerow(['Number', 'Date', 'Shorten URL', 'Full URL', 'FileName', 'Latitude', 'Longitude', 'MD5', 'SHA1'])
 					print("[*] make csv")
 					number = 1
+				gps = folium.Map(location=[22.9602, 119.2102], zoom_start=5)
 
 			i+=1
 			title = new.subject.encode("UTF-8")
-			print('New #' + str(i) + '//' + str(number))# + ' Title : ' + title)
+			print('New #' + str(i))# + ' Title : ' + title)
 			#parse_mail.print_content(new.body)
 			urls = parse_mail.content2url(new.body)
 			# To handle many urls
@@ -55,9 +58,16 @@ try:
 					print("Successes to downloads %s" %(FileName))
 					print("===================================")
 					csv_process.write(dirname, data)
+					lat, lon = csv_process.latitude_longtitude(dirname + "/" + FileName)
+					print lat, lon
+					gps = csv_process.marking(FileName, gps, lat, lon)
+					gps_all = csv_process.marking(FileName, gps_all, lat, lon)
 					number += 1
+				if gps != "None":
+					gps.save(dirname + "/gps.html")
 			print
 			#new.read()
+	gps_all.save('gps.html')
 	g.logout
 except gmail.AuthenticationError:
 	print('log in failed')

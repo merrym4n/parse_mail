@@ -6,6 +6,9 @@ from PIL.ExifTags import TAGS
 
 import hashlib
 
+import folium
+
+
 def write(dirname, data):
 	with open(dirname + "/result.csv", "a") as f:
 		wr = csv.writer(f)
@@ -58,8 +61,8 @@ def latitude_longtitude(FileName):
 		if exifGPS[1] == 'S': Lat = Lat * -1
 		Lon = (lonDeg + (lonMin + lonSec / 60.0) / 60.0)
 		if exifGPS[3] == 'W': Lon = Lon * -1
-		msg = "There is GPS info in this picture located at " + str(Lat) + "," + str(Lon)
-		print msg
+		#msg = "There is GPS info in this picture located at " + str(Lat) + "," + str(Lon)
+		#print msg
 		return Lat, Lon
 	except:
 		return "None", "None"
@@ -67,3 +70,10 @@ def latitude_longtitude(FileName):
 def file_as_bytes(FileName):
 	with FileName:
 		return FileName.read()
+
+def marking(FileName, gps, lat, lon):
+	try:
+		folium.Marker(location=[float(lat), float(lon)], popup=FileName).add_to(gps)
+	except:
+		pass
+	return gps

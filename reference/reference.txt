@@ -1,4 +1,4 @@
-﻿# Environment Settings
+# Environment Settings
 http://shinrip.tistory.com/3
 
 # Gmail login
@@ -59,6 +59,7 @@ http://pythonstudy.xyz/python/article/207-CSV-%ED%8C%8C%EC%9D%BC-%EC%82%AC%EC%9A
 
 # gps
 https://cpuu.postype.com/post/23100/
+http://pinkwink.kr/971
 
 # hash
 https://stackoverflow.com/questions/3431825/generating-an-md5-checksum-of-a-file
